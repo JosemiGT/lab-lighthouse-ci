@@ -1,0 +1,35 @@
+{
+  "name": "lab-lighthouse-ci",
+  "private": true,
+  "version": "0.1.0",
+  "description": "WebPerfImpacters Lighthouse CI demo",
+  "scripts": {
+    "start": "serve src",
+    "test": "npm run lhci:mobile",
+    "lhci:mobile": "lhci autorun",
+    "lhci:desktop": "lhci autorun --collect.settings.preset=desktop"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nucliweb/lab-lighthouse-ci.git"
+  },
+  "keywords": [
+    "lighthouse",
+    "lighthouseci",
+    "webperf",
+    "performance",
+    "webperfimpacter",
+    "WebPerformanceTesting",
+    "webperftest"
+  ],
+  "author": "Joan León <joan.leon@gmail.com> (https://joanleon.dev/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nucliweb/lab-lighthouse-ci/issues"
+  },
+  "homepage": "https://github.com/nucliweb/lab-lighthouse-ci#readme",
+  "devDependencies": {
+    "@lhci/cli": "0.14.0",
+    "serve": "14.2.4"
+  }
+}
